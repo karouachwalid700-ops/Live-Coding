@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--     exercice 1 -->   
+    <h1 id = "titre"> test de selection d un element.</h1>
+
+    <!-- exercice 2 -->
+    <p class="intro">  text 1 de paragraph.</p>
+
+    <!-- exercice 3 -->
+
+    <ul >
+        <li>apple</li>
+        <li>orange</li>
+        <li>kiwi</li>
+    </ul>
+
+
+    <script> 
+    /* exercice 1*/
+        const element =  document.getElementById("titre");
+        console.log(element.textContent);
+
+    /* exercice 2*/
+        const txt = document.querySelector(".intro");
+        console.log(txt);
+
+        txt.textContent = "new text";
+    
+
+    /* exercice 3*/
+        const fruits = document.getElementsByTagName("li");
+        
+        console.log(fruits.length);
+
+        
+
+     </script>
+</body>
+</html>
